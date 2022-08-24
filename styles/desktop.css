@@ -1,0 +1,115 @@
+*, ::after, ::before
+{
+	/* removed default styling */
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	border: 0;
+	background: none;
+	font-family: starborn;
+	box-sizing: border-box;
+	color: white;
+	font-size: 100%;
+	list-style-type: none;
+}
+
+*:focus
+{
+	/* removed default styling */
+	outline: none;
+}
+
+html, body
+{
+	min-height: 100%;
+	background: linear-gradient(45deg, var(--beanaPurple), var(--beanaPink), var(--beanaPurple), var(--beanaPink));
+	background-size: 800vw 600vh;
+	animation: header-gradient 8s ease infinite;
+}
+
+h1
+{
+	text-transform: uppercase;
+	font-weight: normal;
+	text-shadow: 0px 4px rgba(0, 0, 0, .25);
+}
+
+@keyframes header-gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+header
+{
+	width: 100vw;
+	height: 100vh;
+	
+}
+
+#header-content
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: grid;
+	grid-template-columns: 256px auto;
+	grid-template-rows: auto auto;
+	gap: 10px 40px;
+	grid-auto-flow: row;
+	grid-template-areas:
+		"logo title"
+		"logo socials";
+}
+
+#header-content img
+{
+	width: 100%;
+	grid-area: logo;
+}
+
+#header-content h1
+{
+	grid-area: title;
+	font-size: 8em;
+}
+
+#header-content ul
+{
+	grid-area: socials;
+}
+
+#header-content ul img
+{
+	height: 80px;
+	padding: 0 5px;
+	opacity: .9;
+}
+
+#header-content ul img:hover
+{
+	transform: rotate(0deg) !important;
+	opacity: 1;
+}
+
+#header-content ul>li:nth-child(odd) img
+{
+	transform: rotate(5deg);
+}
+
+#header-content ul>li:nth-child(even) img
+{
+	transform: rotate(-5deg);
+}
+
+#header-content ul li
+{
+	display: inline-block;
+}
