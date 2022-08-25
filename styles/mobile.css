@@ -6,3 +6,46 @@ body
 	overflow-y: scroll;
 	-webkit-overflow-scrolling: touch;
 }
+
+#header-content
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: grid;
+	grid-template-columns: 256px auto;
+	grid-template-rows: auto auto;
+	gap: 10px 40px;
+	grid-auto-flow: row;
+	grid-template-areas:
+		"logo logo"
+		"title title"
+		"socials socials";
+
+	text-align: center;
+	justify-content: center;
+}
+
+#header-content h1
+{
+	grid-area: title;
+	margin: 0 auto;
+	font-size: 12vw;
+}
+
+#header-content img
+{
+	width: 90%;
+	max-width: 500px;
+	grid-area: logo;
+	margin: 0 auto;
+}
+
+#header-content ul img
+{
+	height: 85px;
+	width: auto;
+	padding: 5px;
+	opacity: .9;
+}

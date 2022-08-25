@@ -78,7 +78,7 @@ header
 #header-content h1
 {
 	grid-area: title;
-	font-size: 8em;
+	font-size: 8vw;
 }
 
 #header-content ul
@@ -89,7 +89,7 @@ header
 #header-content ul img
 {
 	height: 80px;
-        width: 80px;
+	width: auto;
 	padding: 0 5px;
 	opacity: .9;
 }
