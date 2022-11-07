@@ -23,7 +23,8 @@
 :root
 {
 	/* common colors */
-	--beanaPink: rgb(255, 160, 243);
+	--beanaPink: rgb(255, 160, 244);
+	--beanaPinkDark: rgb(215,120,204);
 	--beanaPurple: rgb(179, 117, 255);
 
 	/* box shadows */

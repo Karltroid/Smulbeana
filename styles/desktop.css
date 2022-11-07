@@ -22,9 +22,8 @@
 html, body
 {
 	min-height: 100%;
-	background: linear-gradient(45deg, var(--beanaPurple), var(--beanaPink), var(--beanaPurple), var(--beanaPink));
-	background-size: 800vw 600vh;
-	animation: header-gradient 8s ease infinite;
+	background-color: var(--beanaPinkDark);
+	overflow-x: hidden;
 }
 
 h1
@@ -49,25 +48,36 @@ h1
 header
 {
 	width: 100vw;
-	height: 100vh;
-	
+	background: linear-gradient(45deg, var(--beanaPurple), var(--beanaPink), var(--beanaPurple), var(--beanaPink));
+	background-size: 800vw 600vh;
+	animation: header-gradient 8s ease infinite;
+	padding: 25px;
 }
 
 #header-content
 {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	position: relative;
+	color: white;
+	margin: 0 auto;
 	display: grid;
-	grid-template-columns: 256px auto;
+	grid-template-columns: auto 256px 54vw auto;
 	grid-template-rows: auto auto;
 	gap: 10px 40px;
-	grid-auto-flow: row;
 	grid-template-areas:
-		"logo title"
-		"logo socials";
+		"left-margin logo title right-margin"
+		"left-margin logo socials right-margin";
 }
+
+#header-content .left-margin
+{
+	grid-area: left-margin;
+}
+
+#header-content .right-margin
+{
+	grid-area: right-margin;
+}
+
 
 #header-content img
 {
@@ -78,7 +88,7 @@ header
 #header-content h1
 {
 	grid-area: title;
-	font-size: 8vw;
+	font-size: 7vw;
 }
 
 #header-content ul
@@ -159,3 +169,83 @@ header
 	cursor: pointer;
 	border: 3px solid white;
 }
+
+#navbar
+{
+	display: block;
+	text-align: center;
+	background-color: var(--beanaPink);
+}
+
+#navbar li
+{
+	color: var(--beanaPurple);
+	display: inline-block;
+	height: 100%;
+	line-height: 80px;
+	font-size: 20px;
+	padding: 0 20px;
+	text-shadow: 0px 1.5px 0px rgba(0,0,0,.2);
+	text-transform: uppercase;
+	height: 80px;
+}
+
+#navbar li:hover
+{
+	cursor: pointer;
+	color: white;
+}
+
+#body-content
+{
+	width: 85vw;
+	margin: 40px auto;
+}
+
+.twitch .twitch-video
+{
+	padding-top: 56.25%;
+	position: relative;
+	height: 0;
+}
+
+.twitch .twitch-video iframe
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+}
+
+.twitch .twitch-chat
+{
+	height: 400px;
+}
+
+.twitch .twitch-chat iframe
+{
+	width: 100%;
+	height: 100%;
+}
+
+
+@media screen and (min-width: 850px) {
+  .twitch {
+    position: relative;
+  }
+
+  .twitch .twitch-video {
+    width: 75%;
+    padding-top: 42.1875%;
+  }
+
+  .twitch .twitch-chat {
+    width: 25%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
