@@ -11,6 +11,7 @@
 	color: white;
 	font-size: 100%;
 	list-style-type: none;
+	text-transform: uppercase;
 }
 
 *:focus
@@ -28,7 +29,6 @@ html, body
 
 h1
 {
-	text-transform: uppercase;
 	font-weight: normal;
 	text-shadow: 0px 4px rgba(0, 0, 0, .25);
 }
@@ -51,7 +51,23 @@ header
 	background: linear-gradient(45deg, var(--beanaPurple), var(--beanaPink), var(--beanaPurple), var(--beanaPink));
 	background-size: 800vw 600vh;
 	animation: header-gradient 8s ease infinite;
-	padding: 25px;
+	padding: 25px 0px;
+}
+
+.minecraft
+{
+	font-family: minecraft;
+	text-transform: lowercase;
+	text-shadow: 1.5px 1.5px 0 rgba(0, 0, 0, .5);
+	background-color: rgba(0, 0, 0, .25);
+	padding: 2px 10px;
+}
+
+.minecraft i
+{
+	font-family: minecraft-italic;
+	text-transform: lowercase;
+	color: lightgray;
 }
 
 #header-content
@@ -175,6 +191,8 @@ header
 	display: block;
 	text-align: center;
 	background-color: var(--beanaPink);
+	z-index: 100;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.075);
 }
 
 #navbar li
@@ -186,7 +204,6 @@ header
 	font-size: 20px;
 	padding: 0 20px;
 	text-shadow: 0px 1.5px 0px rgba(0,0,0,.2);
-	text-transform: uppercase;
 	height: 80px;
 }
 
@@ -249,3 +266,227 @@ header
   }
 }
 
+.card
+{
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.1);
+	position: relative;
+	border-radius: 25px;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+	box-shadow: 0px 8px 0px rgba(0, 0, 0, 0.15);
+	transition: .1s;
+}
+
+a img:hover, a iframe:hover, a div:hover
+{
+	transition: transform .2s;
+	filter: brightness(.75);
+	transform: scale(1.025);
+	cursor: pointer;
+}
+
+.card-small
+{
+	width: 48%;
+	height: 450px;
+	float: left;
+	margin: 0 1% 2%;
+}
+
+.card-thin-container
+{
+	display: table;
+	border-spacing: 20px;
+	min-height: 500px;
+	margin: 0 0 2%;
+}
+
+.card-thin
+{
+	width: 23%;
+	
+	text-align: center;
+	padding: 30px 15px 80px;
+	display: table-cell;
+
+}
+
+.card-margin
+{
+	margin: 0 2% 2% 0;
+}
+
+.card-thin tr>td:nth-child(odd)
+{
+	float: left;
+	background: black;
+	padding: 5px 10px;
+	font-size: .75em;
+	border-radius: 15px;
+}
+
+.card-thin tr>td:nth-child(even)
+{
+	float: right;
+}
+
+.card-thin h1
+{
+	background-image: none !important;
+	padding: 0 0 30px !important;
+}
+
+.card-thin img
+{
+	height: 120px;
+	margin-bottom: 30px;
+}
+
+.card-thin li
+{
+	margin-bottom: 8px;
+}
+
+.card-large
+{
+	width: 98%;
+	display: block;
+	height: 450px;
+	float: left;
+	left: 1%;
+	margin: 0 0 2%;
+	overflow-y: hidden !important;
+}
+
+.card iframe
+{
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+}
+
+.card h1
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	font-size: 1.75em;
+	padding: 50px 25px 20px;
+	width: 100%;
+	background-image: linear-gradient(0deg, black, transparent);
+	pointer-events: none;
+}
+
+.card h1 aside
+{
+	color: lightgray;
+	font-size: 0.6em;
+}
+
+.card-large h1
+{
+	background-image: linear-gradient(3deg, black,transparent, transparent);
+}
+
+.ad
+{
+	width: 512px;
+	border-radius: 15px;
+	margin: 0 auto;
+	display: block;
+}
+
+.bad-emphasis
+{
+	text-shadow: 0 1.5px 0px rgba(150, 0, 0, 0.5);
+}
+
+.good-emphasis
+{
+	text-shadow: 0 1.5px 0px rgba(0, 150, 0, 0.5);
+}
+
+#join-server
+{
+	transition: background 0.5s ease-in, transform .2s;
+}
+
+.questionare
+{
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 15px;
+	padding: 30px 0px;
+	
+	text-align: center;
+	pointer-events: initial;
+}
+
+.questionare h1
+{
+	font-size: 2em;
+	padding: 10px;
+}
+
+.answers
+{
+	display: table;
+	border-spacing: 5vw;
+	width: 100%;
+}
+
+.answers div
+{
+	height: 512px;
+	width: 33.33%;
+	background-color: rgba(0, 0, 0, 0.1);
+	background-size: 80%;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: table-cell;
+	vertical-align:bottom;
+	padding: 15px;
+	font-size: 1.5em;
+	transition: transform .25s;
+}
+
+.answers div:hover
+{
+	cursor: pointer;
+	transform: scale(1.05);
+	background-color: rgba(0, 0, 0, 0.2);
+	border: 2px solid var(--beanaPurple);
+	transition: transform .5s, background-color .5s;
+}
+
+
+.tutorial
+{
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 15px;
+	padding: 30px 0px;
+	
+	text-align: center;
+	pointer-events: initial;
+}
+
+.tutorial h1
+{
+	font-size: 2em;
+	padding: 5px;
+}
+
+.tutorial p
+{
+	padding: 5px;
+}
+
+.tutorial img
+{
+	width: 60%;
+	max-width: 1000px;
+	margin-bottom: 30px;
+}

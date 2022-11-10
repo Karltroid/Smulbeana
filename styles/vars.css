@@ -16,6 +16,21 @@
 	font-family: starborn;
 	src: url('../fonts/starborn.ttf');
 }
+@font-face 
+{
+	font-family: minecraft;
+	src: url('../fonts/minecraftregular.otf');
+}
+@font-face 
+{
+	font-family: minecraft-bold;
+	src: url('../fonts/minecraftbold.otf');
+}
+@font-face 
+{
+	font-family: minecraft-italic;
+	src: url('../fonts/minecraftitalic.otf');
+}
 
 /*************
 * VARIABLES *
