@@ -4,14 +4,14 @@ document.addEventListener("DOMContentLoaded", function(event) // wait for the we
 { 
 	slideshow_element = document.getElementById("join-server");
 
-	slideshow_photos = ["url('../images/minecraft/slideshow/0.png')",
-						"url('../images/minecraft/slideshow/1.png')",
-						"url('../images/minecraft/slideshow/2.png')",
-						"url('../images/minecraft/slideshow/3.png')",
-						"url('../images/minecraft/slideshow/4.png')",
-						"url('../images/minecraft/slideshow/5.png')",
-						"url('../images/minecraft/slideshow/6.png')",
-						"url('../images/minecraft/slideshow/7.png')"];
+	slideshow_photos = ["url('../images/minecraft/slideshow/0.jpg')",
+						"url('../images/minecraft/slideshow/1.jpg')",
+						"url('../images/minecraft/slideshow/2.jpg')",
+						"url('../images/minecraft/slideshow/3.jpg')",
+						"url('../images/minecraft/slideshow/4.jpg')",
+						"url('../images/minecraft/slideshow/5.jpg')",
+						"url('../images/minecraft/slideshow/6.jpg')",
+						"url('../images/minecraft/slideshow/7.jpg')"];
 
 	currentslide = slideshow_photos.length - 1;
 
