@@ -25,7 +25,7 @@ function carousel()
 
 	slideshow_element.style.backgroundImage = slideshow_photos[currentslide];
 
-	setTimeout(carousel, 3500);
+	setTimeout(carousel, 5000);
 
 }
 
