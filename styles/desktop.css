@@ -224,6 +224,7 @@ header
 	padding-top: 56.25%;
 	position: relative;
 	height: 0;
+	margin-bottom: 30px;
 }
 
 .twitch .twitch-video iframe
@@ -285,6 +286,11 @@ a img:hover, a iframe:hover, a div:hover
 	filter: brightness(.75);
 	transform: scale(1.025);
 	cursor: pointer;
+}
+
+.socials li img:hover
+{
+	transition: 0s !important;
 }
 
 .card-small
@@ -489,4 +495,9 @@ a img:hover, a iframe:hover, a div:hover
 	width: 60%;
 	max-width: 1000px;
 	margin-bottom: 30px;
+}
+
+#schedule
+{
+	width: 100%;
 }
