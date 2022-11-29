@@ -28,30 +28,7 @@
 	</head>
 	<body>
 
-		<header>
-			<div id="header-content">
-				<div class="left-margin"></div>
-				<img src="../images/emotes/beanaCelebrate x400.gif" />
-				<h1>Smulbeana</h1>
-				<ul class="socials">
-					<li><a href="http://twitch.tv/smulbeana" target="_blank"><img alt="Smulbeana's Twitch" src="../images/icons/socials/twitch.png" /></a></li>
-					<li><a href="https://www.youtube.com/channel/UCtMKI_urv5mSilZ6caYs4Ag" target="_blank"><img alt="Smulbeana's Youtube" src="../images/icons/socials/youtube.png" /></a></li>
-					<li><a href="https://discord.gg/invite/VYtaV6y6ah" target="_blank"><img alt="Smulbeana's Discord" src="../images/icons/socials/discord.png" /></a></li>
-					<li><a href="https://www.tiktok.com/@smulbeana" target="_blank"><img alt="Smulbeana's Tiktok" src="../images/icons/socials/tiktok.png" /></a></li>
-					<li><a href="https://instagram.com/smulbeana" target="_blank"><img alt="Smulbeana's Instagram" src="../images/icons/socials/instagram.png" /></a></li>
-					<li><a href="https://twitter.com/smulbeana" target="_blank"><img alt="Smulbeana's Twitter" src="../images/icons/socials/twitter.png" /></a></li>
-					<li><a href="https://reddit.com/r/smulbeana" target="_blank"><img alt="r/Smulbeana Subreddit" src="../images/icons/socials/reddit.png" /></a></li>
-					<!--<li><a onclick="showelement('Warning18');" style="cursor: pointer;"><img alt="Smulbeana's OnlyFans" src="../images/icons/socials/onlyfans.png" /></a></li>-->
-				</ul>
-				<div class="right-margin"></div>
-			</div>
-		</header>
-
-		<ul id="navbar">
-			<a href="../"><li>Home</li></a><!--
-			--><a href="https://store.smulbeana.net" target="_blank"><li>Merch</li></a><!--
-			--><a><li>Sponsors</li></a>
-		</ul>
+		<?php include "../page_elements/header.html">
 
 		<div id="body-content">
 			<a href="https://www.youtube.com/watch?v=GJ4kBOk8SSc" target="_blank"><div id="trailer" class="card card-small">
@@ -148,11 +125,6 @@
 
 			<a href="https://dedimc.promo/Smulbeana"><img class="ad" src="../images/sponsors/dedicatedmc.png" /></a>
 			
-		</div>
-
-		<div id="Warning18" class="hide">
-			<h1>Are you 18 years or older?</h1>
-			<button onclick="gotourl('https://onlyfans.com/Smulbeana')">YES</button><button onclick="hideelement('Warning18')">NO</button>
 		</div>
 
 	</body>
