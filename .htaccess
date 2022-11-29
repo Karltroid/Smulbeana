@@ -1,8 +1,0 @@
-# re-write html to php
-RewriteRule ^(.*)\.html$ $1.php [L]
-RewriteRule ^(.+)/$ http://%{HTTP_HOST}/$1 [R=301,L]
-
-
-# re-write no extension to .php
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\.]+)$ $1.php [NC,L]
