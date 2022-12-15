@@ -54,6 +54,30 @@ header
 	padding: 25px 0px;
 }
 
+#sponsor-inqury
+{
+	text-align: center;
+	margin-top: 30px;
+
+}
+
+#sponsor-inqury h2
+{
+	font-size: 1.7em;
+font-family: Courier New;
+}
+
+#sponsor-inqury a
+{
+	font-size: 1.1em;
+	font-family: Courier New;
+}
+
+#sponsor-inqury a:hover
+{
+	text-decoration: underline;
+}
+
 .minecraft
 {
 	font-family: minecraft;
@@ -217,6 +241,13 @@ header
 {
 	width: 85vw;
 	margin: 40px auto;
+}
+
+.newtab-icon
+{
+	height: 20px;
+	padding: 0px 12px;
+	margin: 0 0 1px;
 }
 
 .twitch

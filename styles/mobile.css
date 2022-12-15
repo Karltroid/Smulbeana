@@ -57,6 +57,12 @@ header
 	text-align: center;
 }
 
+#body-content
+{
+	width: 92vw;
+	margin: 40px auto;
+}
+
 .card
 {
 	display: inline-block;
