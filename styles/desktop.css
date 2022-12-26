@@ -430,12 +430,19 @@ a img:hover, a iframe:hover, a div:hover
 	background-image: linear-gradient(3deg, black,transparent, transparent);
 }
 
+#ads
+{
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
 .ad
 {
 	width: 512px;
 	border-radius: 15px;
-	margin: 0 auto;
-	display: block;
+	display: inline-block;
+	margin: 0px 10px 5px;
 }
 
 .bad-emphasis
