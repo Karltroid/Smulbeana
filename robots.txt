@@ -8,3 +8,5 @@ Disallow: /images/minecraft/consoletutorial/
 Disallow: /images/minecraft/javatutorial/
 Disallow: /images/minecraft/bedrockmenu.jpg
 Disallow: /images/minecraft/javamenu.jpg
+
+Sitemap: https://smulbeana.net/sitemap.xml
