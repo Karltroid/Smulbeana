@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /font/
+Disallow: /scripts/
+Disallow: /styles/
+Disallow: /images/icons/
+Disallow: /images/minecraft/bedrocktutorial/
+Disallow: /images/minecraft/consoletutorial/
+Disallow: /images/minecraft/javatutorial/
+Disallow: /images/minecraft/bedrockmenu.jpg
+Disallow: /images/minecraft/javamenu.jpg
