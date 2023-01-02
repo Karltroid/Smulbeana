@@ -94,6 +94,13 @@ font-family: Courier New;
 	color: lightgray;
 }
 
+#server-map
+{
+	background-image: url('../images/minecraft/map.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
 #header-content
 {
 	position: relative;
