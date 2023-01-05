@@ -1,0 +1,28 @@
+image: php:latest
+
+services:
+  - mariadb:latest
+
+cache:
+  paths:
+    - vendor/
+
+before_script:
+  - apt update -yqq
+  - apt install -yqq git libmcrypt-dev libcurl4-gnutls-dev libexpat1-dev libxml2-dev libpcre3-dev unzip libzip-dev zlib1g-dev libbz2-dev
+  - docker-php-ext-install pdo_mysql intl curl zip bz2
+  - curl -sS https://getcomposer.org/installer | php
+  - php composer.phar install
+
+variables:
+  COMPOSER: 'inc/test/composer.json'
+  MYSQL_HOST: mariadb
+  MYSQL_DATABASE: mysql_database
+  MYSQL_USERNAME: root
+  MYSQL_PASSWORD: mysql_strong_password
+  MYSQL_ROOT_PASSWORD: mysql_strong_password
+  LITEBANS_TABLE_PREFIX: test_
+
+test:
+  script:
+    - ./vendor/bin/phpunit inc/test/php
