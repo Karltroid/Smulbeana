@@ -550,3 +550,17 @@ a img:hover, a iframe:hover, a div:hover
 	width: 100%;
 	margin: 30px 0px;
 }
+
+#staff-apply
+{
+	background-image: url('../images/minecraft/applyforadmin.jpg');
+	background-size: cover;
+	background-position: left bottom;
+}
+
+#dedicated-mc
+{
+	background-image: url('../images/minecraft/dedicatedmc.jpg');
+	background-size: cover;
+	background-position: center;
+}
