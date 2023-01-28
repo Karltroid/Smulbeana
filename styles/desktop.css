@@ -326,9 +326,26 @@ font-family: Courier New;
 a img:hover, a iframe:hover, a div:hover
 {
 	transition: transform .2s;
-	filter: brightness(.75);
+	filter: brightness(0.9);
 	transform: scale(1.025);
 	cursor: pointer;
+}
+
+.qr-code
+{
+	position: absolute;
+	height: 110px !important;
+	padding: 0 !important;
+	margin: 0;
+	top: 95px;
+	left: -10px;
+	filter: opacity(95%);
+	box-shadow: var(--perspectiveBoxShadow);
+}
+
+.socials li
+{
+	position: relative;
 }
 
 .socials li img:hover
