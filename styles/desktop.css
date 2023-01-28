@@ -341,6 +341,7 @@ a img:hover, a iframe:hover, a div:hover
 	left: -10px;
 	filter: opacity(95%);
 	box-shadow: var(--perspectiveBoxShadow);
+	z-index: 1;
 }
 
 .socials li
