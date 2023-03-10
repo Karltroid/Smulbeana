@@ -513,6 +513,7 @@ a img:hover, a iframe:hover, a div:hover
 {
 	height: 512px;
 	width: 33.33%;
+	height: 50vh;
 	background-color: rgba(0, 0, 0, 0.1);
 	background-size: 80%;
 	background-repeat: no-repeat;
