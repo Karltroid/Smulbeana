@@ -110,12 +110,12 @@ header
 	line-height: 60px;
 }
 
-	.videos
-	{
-		flex-direction: column;
-	}
+.videos
+{
+	flex-direction: column;
+}
 
-	.latestVideoEmbed[vnum='3'],
-	.latestVideoEmbed[vnum='4'] {
-		display: none;
+.latestVideoEmbed[vnum='3'],
+.latestVideoEmbed[vnum='4'] {
+	display: none;
 }
