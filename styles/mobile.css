@@ -109,3 +109,13 @@ header
 	vertical-align:bottom;
 	line-height: 60px;
 }
+
+	.videos
+	{
+		flex-direction: column;
+	}
+
+	.latestVideoEmbed[vnum='3'],
+	.latestVideoEmbed[vnum='4'] {
+		display: none;
+}
